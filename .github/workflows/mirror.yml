@@ -11,12 +11,12 @@ jobs:
           fetch-depth: 0
       - name: setup
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.GITLAB_SSH_PRIVATE_KEY }}
           TARGET_REPO_URL: git@github.com:pssingh21/test-repo-mirror.git
         run: |
           set -eu
           mkdir -p ~/.ssh
-          echo "$INPUT_SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          echo "${{ env.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
       - name: setup
         env:
