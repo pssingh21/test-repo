@@ -11,6 +11,8 @@ on:
 jobs:
   to_gitlab:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     env:
       SSH_PRIVATE_KEY: ${{ secrets.GITLAB_SSH_PRIVATE_KEY }}
       TARGET_REPO_URL: github.com/pssingh21/test-repo-mirror.git
