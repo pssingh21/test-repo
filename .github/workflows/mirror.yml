@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SSH_PRIVATE_KEY: ${{ secrets.GITLAB_SSH_PRIVATE_KEY }}
-      TARGET_REPO_URL: github.com:pssingh21/test-repo-mirror.git
+      TARGET_REPO_URL: github.com/pssingh21/test-repo-mirror.git
       PERSONAL_ACCESS_TOKEN_FOR_MIRRORING: ${{ secrets.PERSONAL_ACCESS_TOKEN_FOR_MIRRORING }}
     steps:                                              # <-- must use actions/checkout before mirroring!
       - uses: actions/checkout@v2
