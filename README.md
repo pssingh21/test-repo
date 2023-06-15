@@ -1,2 +1,2 @@
 # test-repo
-test 2 3 git  hook
+test 2 3 git hook
