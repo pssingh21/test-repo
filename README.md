@@ -1,2 +1,2 @@
 # test-repo
-test 2 3 githook
+test 2 3 githook master
