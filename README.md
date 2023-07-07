@@ -1,2 +1,2 @@
 # test-repo
-test 2 3 githook master
+test 2 3 githook new mirror
